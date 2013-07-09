@@ -8,7 +8,7 @@ module Lyricfy
       self.lines  = lines
     end
 
-    def body(separator = '\n')
+    def body(separator="")
       lines.join(separator)
     end
   end

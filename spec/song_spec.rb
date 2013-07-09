@@ -24,7 +24,7 @@ describe Lyricfy::Song do
 
     describe "with no params" do
       it "should use default separator" do
-        @song.body.must_equal "Look at the stars\\nLook how they shine for you"
+        @song.body.must_equal "Look at the starsLook how they shine for you"
       end
     end
   end

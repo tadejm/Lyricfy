@@ -27,8 +27,8 @@ module Lyricfy
       container = html.css('div.lyricbox').first
       if container
         elements = container.children.to_a
-        paragraphs = elements.select { |ele| ele.text? }
-        paragraphs.map! { |paragraph| paragraph.text.strip.chomp if paragraph.text != "\n" }.reject! { |ele| ele.nil? }
+        paragraphs = elements.select { |ele| ele.text? || (ele.name == 'br') }
+        paragraphs.compact.map{|x| x.text.empty?? "\n" : x.text.strip }
       end
     end
   end
