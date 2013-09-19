@@ -21,6 +21,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency "nokogiri", [">= 1.3.3"]
 
   gem.add_development_dependency "rake"
+  gem.add_development_dependency "guard-minitest"
   gem.add_development_dependency "webmock", ["1.8.0"]
   gem.add_development_dependency "vcr", ["~> 2.4.0"]
 end
